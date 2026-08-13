@@ -6,7 +6,7 @@ import { logError } from '@edx/frontend-platform/logging';
 import { initializeHotjar } from '@edx/frontend-enterprise-hotjar';
 
 import { ErrorPage, AppContext } from '@edx/frontend-platform/react';
-import { FooterSlot } from '@edx/frontend-component-footer';
+import { RowadHeader, RowadFooter } from '@edx/frontend-component-header';
 import { Alert } from '@openedx/paragon';
 
 import { RequestKeys } from 'data/constants/requests';
@@ -23,7 +23,6 @@ import track from 'tracking';
 import fakeData from 'data/services/lms/fakeData/courses';
 
 import AppWrapper from 'containers/AppWrapper';
-import LearnerDashboardHeader from 'containers/LearnerDashboardHeader';
 
 import { getConfig } from '@edx/frontend-platform';
 import messages from './messages';
@@ -79,7 +78,7 @@ export const App = () => {
       </Helmet>
       <div>
         <AppWrapper>
-          <LearnerDashboardHeader />
+          <RowadHeader />
           <main id="main">
             {hasNetworkFailure
               ? (
@@ -91,7 +90,7 @@ export const App = () => {
               )}
           </main>
         </AppWrapper>
-        <FooterSlot />
+        <RowadFooter />
       </div>
     </>
   );
