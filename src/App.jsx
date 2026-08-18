@@ -6,7 +6,7 @@ import { logError } from '@edx/frontend-platform/logging';
 import { initializeHotjar } from '@edx/frontend-enterprise-hotjar';
 
 import { ErrorPage, AppContext } from '@edx/frontend-platform/react';
-import { RowadHeader, RowadFooter } from '@edx/frontend-component-header';
+import { RowadFooter } from '@edx/frontend-component-header';
 import { Alert } from '@openedx/paragon';
 
 import { RequestKeys } from 'data/constants/requests';
@@ -78,7 +78,6 @@ export const App = () => {
       </Helmet>
       <div>
         <AppWrapper>
-          <RowadHeader />
           <main id="main">
             {hasNetworkFailure
               ? (
