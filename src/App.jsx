@@ -6,7 +6,7 @@ import { logError } from '@edx/frontend-platform/logging';
 import { initializeHotjar } from '@edx/frontend-enterprise-hotjar';
 
 import { ErrorPage, AppContext } from '@edx/frontend-platform/react';
-import { RowadFooter } from '@edx/frontend-component-header';
+import { RowadHeader, RowadFooter } from '@edx/frontend-component-header';
 import { Alert } from '@openedx/paragon';
 
 import { RequestKeys } from 'data/constants/requests';
@@ -77,6 +77,7 @@ export const App = () => {
         <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
       </Helmet>
       <div>
+          <RowadHeader />
         <AppWrapper>
           <main id="main">
             {hasNetworkFailure
