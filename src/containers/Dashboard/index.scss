@@ -25,3 +25,69 @@
     }
   }
 }
+
+/* ROWAD DASHBOARD FIGMA CONTAINER */
+#main {
+  min-height: 100vh;
+  padding: 48px 24px 72px;
+  background-color: #f3f4f4;
+}
+
+#dashboard-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1240px;
+  padding: 48px !important;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 48px;
+}
+
+#dashboard-content {
+  width: 100%;
+}
+
+#dashboard-content > .container,
+#dashboard-content > .container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 991.98px) {
+  #main {
+    padding: 32px 20px 56px;
+  }
+
+  #dashboard-container {
+    padding: 32px !important;
+    border-radius: 32px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #main {
+    padding: 24px 12px 40px;
+  }
+
+  #dashboard-container {
+    padding: 20px 16px !important;
+    border-radius: 24px;
+  }
+
+  .course-list-column,
+  .sidebar-column {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* ROWAD FULL PAGE GREY BACKGROUND */
+html,
+body,
+#root,
+#root > div,
+#main {
+  background-color: #f3f4f4 !important;
+}
