@@ -64,3 +64,43 @@ $input-focus-box-shadow: var(--pgn-elevation-form-input-base); // hack to get up
     overflow: hidden;
   }
 }
+/* ROWAD LEARNER DASHBOARD UI ENHANCEMENTS */
+
+:root {
+  --rowad-font-family:
+    var(--font-noto-kufi-arabic, "Noto Kufi Arabic"),
+    Arial,
+    sans-serif;
+
+  --pgn-typography-font-family-base: var(--rowad-font-family);
+  --pgn-typography-headings-font-family: var(--rowad-font-family);
+}
+
+/* Reduce the learner-dashboard header height. */
+.rowad-mfe-header-shell {
+  height: 108px !important;
+  min-height: 108px !important;
+}
+
+/* Remove the dashboard's outer horizontal and vertical padding. */
+#dashboard-content .container-mw-xl.container-fluid {
+  padding: 0 !important;
+}
+
+/* Keep Arabic and English text consistent with the Rowad header/footer. */
+#dashboard-content,
+#dashboard-content h1,
+#dashboard-content h2,
+#dashboard-content h3,
+#dashboard-content h4,
+#dashboard-content h5,
+#dashboard-content h6,
+#dashboard-content p,
+#dashboard-content span,
+#dashboard-content a,
+#dashboard-content button,
+#dashboard-content input,
+#dashboard-content select,
+#dashboard-content textarea {
+  font-family: var(--rowad-font-family) !important;
+}
