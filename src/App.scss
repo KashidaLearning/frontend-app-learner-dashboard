@@ -104,3 +104,18 @@ $input-focus-box-shadow: var(--pgn-elevation-form-input-base); // hack to get up
 #dashboard-content textarea {
   font-family: var(--rowad-font-family) !important;
 }
+/* ROWAD LEARNER DASHBOARD — COURSE ACTION BUTTONS */
+
+[data-test-id="CourseCardActions"] a.btn-primary {
+  background-color: #f08f62 !important;
+  border-color: #f08f62 !important;
+  color: #fff !important;
+}
+
+[data-test-id="CourseCardActions"] a.btn-primary:hover,
+[data-test-id="CourseCardActions"] a.btn-primary:focus,
+[data-test-id="CourseCardActions"] a.btn-primary:active {
+  background-color: #f08f62 !important;
+  border-color: #f08f62 !important;
+  color: #fff !important;
+}
