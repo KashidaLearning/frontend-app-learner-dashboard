@@ -126,9 +126,7 @@ $input-focus-box-shadow: var(--pgn-elevation-form-input-base); // hack to get up
   overflow: visible !important;
 }
 
-#dashboard-content {
-  padding: 35px !important;
-}
+
 
 #dashboard-content
   [data-test-id="CourseCardActions"]
