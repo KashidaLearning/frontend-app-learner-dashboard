@@ -4,3 +4,10 @@
     min-width: auto;
   }
 }
+
+/* ROWAD RTL WIDGET IMAGE */
+html[dir="rtl"] #looking-for-challenge-widget {
+  .pgn__card-wrapper-image-cap.horizontal .pgn__card-image-cap {
+    transform: scaleX(-1) !important;
+  }
+}
